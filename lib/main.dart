@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pantallas/productos.dart';
 
 void main() => runApp(const MercadoApp());
 
@@ -8,10 +9,12 @@ class MercadoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Mercado Campesino',
-      home: const Scaffold(
-        body: Center(child: Text('Mercado Campesino')),
+      theme: ThemeData(
+        primarySwatch: Colors.green,
       ),
+      home: const PantallaProductos(),
     );
   }
 }
